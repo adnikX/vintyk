@@ -1,0 +1,287 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+.wrapper {
+    max-width: 1140px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+
+
+}
+header {
+    background: #87509c;
+}
+header.red {
+    background-color: red;
+}
+.top_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 150px;
+}
+.header_nav {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+
+}
+.header_nav a {
+    text-decoration: none;
+    color: inherit;
+}
+.header_nav ul {
+    display: flex;
+}
+.header_nav ul li {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 1px;
+}
+.header_nav ul li.active {
+    background: #643a79;
+    border-radius: 3px;
+    transition: background 300ms ease-in-out;
+}
+.header_nav ul li:hover {
+    background: #643a79;
+    border-radius: 3px;
+    transition: background 300ms ease-in-out;
+}
+.bottom_line {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 145px;
+  
+}
+.bottom_line p {
+    font-size: 42px;
+    line-height: 48px;
+    color: #f7f3ea;
+    width: 700;
+    margin-bottom: 50px;
+}
+.button {
+    display: inline-block;
+    background: #eb7d4b;
+    height: 66px;
+    line-height: 66px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    border-radius: 3px;
+    padding-left: 82px;
+    padding-right: 82px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 4px solid #c86a40;
+}
+.button:hover {
+    background: #c86a40;
+    transition: background 300ms ease-in-out;
+}
+section.services {
+    background: #17c2a4;
+    padding: 120px 0;
+    text-align: center;
+}
+section.services h2 {
+    font-size: 40px;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 25px;
+}
+section.services h2::after {
+    content: "";
+    display: block;
+    width: 86px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    left: 50%;
+    margin-left: -43px;
+    bottom: 0;
+}
+section.services .description {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 70px;
+}
+section.services .service_list {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space;
+        flex-wrap: wrap;
+}
+section.services .service_list .service_item {
+    width: calc(25% - 15px);
+}
+section.services .service_list .service_item .img {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+section.services .service_list .service_item .item_title {
+    font-size: 24px;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+section.services .service_list .service_item .item_description {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+section.contact {
+    background: #3c5499;
+    padding: 120px 0;
+    text-align: center;
+}
+section.contact h2 {
+    font-size: 40px;
+    line-height: 30px;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 25px;
+}
+section.contact h2::after {
+    content: "";
+    display: block;
+    width: 86px;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.15);
+    position: absolute;
+    left: 50%;
+    margin-left: -43px;
+    bottom: 0;
+}
+section.contact .description {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 70px;
+}
+section.contact .contact_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 856px;
+    margin: 0 auto;
+}
+section.contact .contact_form input[type="text"], section.contact .contact_form input[type="email"] {
+    width: calc(50% - 16px);
+    margin-bottom: 25px;  
+    background: #273a71;
+    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+    padding-left: 23px;
+    height: 56px;
+    line-height: 56px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+color: #ffffff;
+font-size: 18px;
+}
+input::-moz-placeholder, textarea::-webkit-input-placeholder { /* Firefox 19+ */
+color: #ffffff;
+font-size: 18px;
+}
+input:-ms-input-placeholder, textarea::-webkit-input-placeholder { /* IE 10+ */
+color: #ffffff;
+font-size: 18px;
+}
+input:-moz-placeholder, textarea::-webkit-input-placeholder { /* Firefox 18- */
+color: #ffffff;
+font-size: 18px;
+}
+
+section.contact .contact_form textarea {
+    width: 100%;
+    margin-bottom: 60px;
+    background: #273a71;
+    color: #ffffff;
+    border-radius: 3px;
+    border: none;
+    padding-left: 23px;
+    height: 200px;
+    line-height: 56px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+section.contact .contact_form .submit {
+    text-align: center;
+    width: 100%;
+}
+section.contact .contact_form input[type="submit"] {
+    border: 0;
+    display: inline-block;
+    background: #30bae7;
+    height: 66px;
+    line-height: 66px;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    border-radius: 3px;
+    padding-left: 82px;
+    padding-right: 82px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    border-bottom: 4px solid #299ec5;
+}
+section.contact .contact_form input[type="submit"]:hover {
+    transition: background 300ms ease-in-out;
+    background: #299ec5;
+}
+footer {
+    background: #344b8e;
+}
+.footer_social {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+    color: #ffffff;
+
+}
+.footer_social ul {
+    min-height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+footer a:hover {
+    color: #30bae7;
+}
